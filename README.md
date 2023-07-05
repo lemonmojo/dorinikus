@@ -7,6 +7,10 @@ Just a Swift Playground Project
 * [Swift by Sundell](https://www.swiftbysundell.com/)
 * [Hacking with Swift](https://www.hackingwithswift.com/)
 
+## Tools
+* [Xcode](https://apps.apple.com/app/xcode/id497799835)
+* [Hopper Disassembler](https://www.hopperapp.com/)
+
 ## Obvious differences to .NET
 * Machine Code
 * No Exceptions
@@ -41,11 +45,12 @@ Just a Swift Playground Project
 * Xcode Workspaces
 * Static/Dynamic Libraries and Frameworks
 * Modules
+* `otool` utility
 * App/Framework Bundles and resources
 * Extend on visibility/Access control beyond Module boundaries
 * Unit testing
 * AppKit
 * Deployment Target
-* Code Signing & Sandboxing
+* Code Signing & Sandboxing (`codesign` utility)
 * Instruments and other debugging aids
 * ObjC & C interop
