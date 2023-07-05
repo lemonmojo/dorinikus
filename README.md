@@ -2,6 +2,11 @@
 
 Just a Swift Playground Project
 
+## Learning Material
+* [The Swift Programming Language iBook by Apple](https://books.apple.com/book/the-swift-programming-language-swift-5-7/id881256329)
+* [Swift by Sundell](https://www.swiftbysundell.com/)
+* [Hacking with Swift](https://www.hackingwithswift.com/)
+
 ## Obvious differences to .NET
 * Machine Code
 * No Exceptions
@@ -33,6 +38,7 @@ Just a Swift Playground Project
 * Type casting/checking
 * Ranges
 * Tuples
+* Xcode Workspaces
 * Static/Dynamic Libraries and Frameworks
 * Modules
 * App/Framework Bundles and resources
