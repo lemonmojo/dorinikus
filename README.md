@@ -40,6 +40,7 @@ Just a Swift Playground Project
 
 ## Session 2 Agenda
 * Type casting/checking
+* Defer
 * Ranges
 * Tuples
 * Xcode Workspaces
