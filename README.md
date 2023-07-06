@@ -45,6 +45,8 @@ Just a Swift Playground Project
 * Tuples
 * Xcode Workspaces
 * Static/Dynamic Libraries and Frameworks
+* Universal/Fat binaries
+* `file` utility
 * Modules
 * `otool` utility
 * App/Framework Bundles and resources
