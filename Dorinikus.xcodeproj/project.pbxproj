@@ -7,13 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E70EB2812A56E9EE00DE7726 /* libDorinikusSDK.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E70EB2802A56E9EE00DE7726 /* libDorinikusSDK.dylib */; };
+		E70EB2822A56E9EE00DE7726 /* libDorinikusSDK.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = E70EB2802A56E9EE00DE7726 /* libDorinikusSDK.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		E7599BB22A543D30001F86D6 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7599BB12A543D30001F86D6 /* main.swift */; };
-		E7599BB92A54528C001F86D6 /* PersonStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7599BB82A54528C001F86D6 /* PersonStore.swift */; };
-		E7599BBB2A54529C001F86D6 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7599BBA2A54529C001F86D6 /* Person.swift */; };
 		E7599BBD2A545A80001F86D6 /* TestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7599BBC2A545A80001F86D6 /* TestController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		E70EB2832A56E9EE00DE7726 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E70EB2822A56E9EE00DE7726 /* libDorinikusSDK.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E7599BAC2A543D30001F86D6 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -26,10 +37,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E70EB2802A56E9EE00DE7726 /* libDorinikusSDK.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libDorinikusSDK.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7599BAE2A543D30001F86D6 /* Dorinikus */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Dorinikus; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7599BB12A543D30001F86D6 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		E7599BB82A54528C001F86D6 /* PersonStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonStore.swift; sourceTree = "<group>"; };
-		E7599BBA2A54529C001F86D6 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		E7599BBC2A545A80001F86D6 /* TestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestController.swift; sourceTree = "<group>"; };
 		E7599BD72A5548D2001F86D6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -39,21 +49,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E70EB2812A56E9EE00DE7726 /* libDorinikusSDK.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E70EB27F2A56E9EE00DE7726 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E70EB2802A56E9EE00DE7726 /* libDorinikusSDK.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E7599BA52A543D30001F86D6 = {
 			isa = PBXGroup;
 			children = (
 				E7599BD72A5548D2001F86D6 /* README.md */,
 				E7599BBC2A545A80001F86D6 /* TestController.swift */,
-				E7599BBA2A54529C001F86D6 /* Person.swift */,
-				E7599BB82A54528C001F86D6 /* PersonStore.swift */,
 				E7599BB12A543D30001F86D6 /* main.swift */,
 				E7599BAF2A543D30001F86D6 /* Products */,
+				E70EB27F2A56E9EE00DE7726 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,6 +93,7 @@
 				E7599BAA2A543D30001F86D6 /* Sources */,
 				E7599BAB2A543D30001F86D6 /* Frameworks */,
 				E7599BAC2A543D30001F86D6 /* CopyFiles */,
+				E70EB2832A56E9EE00DE7726 /* Embed Libraries */,
 			);
 			buildRules = (
 			);
@@ -123,8 +142,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7599BBB2A54529C001F86D6 /* Person.swift in Sources */,
-				E7599BB92A54528C001F86D6 /* PersonStore.swift in Sources */,
 				E7599BB22A543D30001F86D6 /* main.swift in Sources */,
 				E7599BBD2A545A80001F86D6 /* TestController.swift in Sources */,
 			);
@@ -183,7 +200,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -237,7 +254,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;

@@ -1,4 +1,20 @@
 import Foundation
+import DorinikusSDK
+
+extension String {
+    func substring(_ range: Range<Int>) -> Substring {
+        let startIndex = self.startIndex
+        
+        let lowerBound = self.index(startIndex, offsetBy: range.lowerBound)
+        let upperBound = self.index(startIndex, offsetBy: range.upperBound)
+        
+        let substr = self[lowerBound..<upperBound]
+        
+        return substr
+    }
+    
+    static let empty = ""
+}
 
 class TestController {
     let store = PersonStore()
@@ -15,8 +31,26 @@ class TestController {
     }
     
     func runTest() {
+        let tuple: (age: Int, name: String) = (0, "Felix")
+        let _ = tuple.age
+        
+        let name = "Felix"
+        let fe = name.substring(1..<2)
+//        let fe = name[name.startIndex..<name.index(name.startIndex, offsetBy: 2)]
+        print(fe)
+        
         guard let felix = try? Person(firstName: "Felix",
                                       lastName: "Deimel") else {
+            fatalError()
+        }
+        
+        var animals = [Animal]()
+        
+        animals.append(felix)
+        
+        let felixAsAnimal = animals[0]
+        
+        guard felixAsAnimal is Person else {
             fatalError()
         }
         

@@ -1,13 +1,15 @@
 import Foundation
 
-struct Person {
-    let firstName: String
-    let lastName: String
-    private(set) var age: UInt
+public struct Person: Animal, Equatable {
+    public static let species = "Human"
     
-    init(firstName: String,
-         lastName: String) throws {
-        guard !firstName.isEmpty ||
+    public let firstName: String
+    public let lastName: String
+    public private(set) var age: UInt
+    
+    public init(firstName: String,
+                lastName: String) throws {
+        guard !firstName.isEmpty,
               !lastName.isEmpty else {
             throw InitError.emptyNames
         }
@@ -15,6 +17,12 @@ struct Person {
         self.firstName = firstName
         self.lastName = lastName
         self.age = 0
+    }
+}
+
+public extension Person {
+    enum InitError: Error {
+        case emptyNames
     }
     
     var fullName: String {
@@ -34,15 +42,9 @@ struct Person {
     }
 }
 
-extension Person {
-    enum InitError: Error {
-        case emptyNames
-    }
-}
-
 // MARK: - Localize that Error!
 extension Person.InitError: LocalizedError {
-    var errorDescription: String? {
+    public var errorDescription: String? {
         switch self {
             case .emptyNames:
                 return "Either first or last name was not provided"

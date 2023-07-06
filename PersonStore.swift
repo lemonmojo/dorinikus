@@ -1,30 +1,24 @@
 import Foundation
 
-protocol PersonStoreDelegate: AnyObject {
+public protocol PersonStoreDelegate: AnyObject {
     func personStore(_ personStore: PersonStore,
                      didAddPerson person: Person)
 }
 
-class PersonStore {
-    private(set) var persons: [Person]
+public class PersonStore {
+    public private(set) var persons: [Person]
     
-    weak var delegate: PersonStoreDelegate?
+    public weak var delegate: PersonStoreDelegate?
     
-    typealias DidAddPersonHandler = (_ person: Person) -> Void
+    public typealias DidAddPersonHandler = (_ person: Person) -> Void
     private var didAddPersonHandler: DidAddPersonHandler?
     
-    func setDidAddPersonHandler(_ handler: DidAddPersonHandler?) {
-        didAddPersonHandler = handler
-    }
-    
-    init(persons: [Person]) {
+    public init(persons: [Person]) {
         self.persons = persons
     }
-    
-    convenience init() {
-        self.init(persons: .init())
-    }
-    
+}
+
+public extension PersonStore {
     func resetPersons() {
         persons = .init()
     }
@@ -36,5 +30,13 @@ class PersonStore {
         
         delegate?.personStore(self,
                               didAddPerson: person)
+    }
+    
+    convenience init() {
+        self.init(persons: .init())
+    }
+    
+    func setDidAddPersonHandler(_ handler: DidAddPersonHandler?) {
+        didAddPersonHandler = handler
     }
 }

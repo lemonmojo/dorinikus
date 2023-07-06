@@ -1,0 +1,404 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E70EB2782A56E97900DE7726 /* PersonStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70EB2772A56E97900DE7726 /* PersonStore.swift */; };
+		E70EB27A2A56E98600DE7726 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70EB2792A56E98600DE7726 /* Person.swift */; };
+		E70EB27C2A56E99200DE7726 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70EB27B2A56E99200DE7726 /* Animal.swift */; };
+		E732D1962A57042C006E1133 /* Person_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E732D1952A57042C006E1133 /* Person_Tests.swift */; };
+		E78529102A570024002A86E2 /* libDorinikusSDK.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E70EB2692A56E4F800DE7726 /* libDorinikusSDK.dylib */; };
+		E78529172A57005B002A86E2 /* PersonStore_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E785290E2A570024002A86E2 /* PersonStore_Tests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E78529112A570024002A86E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E70EB2612A56E4F800DE7726 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E70EB2682A56E4F800DE7726;
+			remoteInfo = DorinikusSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E70EB2692A56E4F800DE7726 /* libDorinikusSDK.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libDorinikusSDK.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		E70EB2772A56E97900DE7726 /* PersonStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonStore.swift; sourceTree = "<group>"; };
+		E70EB2792A56E98600DE7726 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		E70EB27B2A56E99200DE7726 /* Animal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		E732D1952A57042C006E1133 /* Person_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person_Tests.swift; sourceTree = "<group>"; };
+		E785290C2A570024002A86E2 /* DorinikusSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DorinikusSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E785290E2A570024002A86E2 /* PersonStore_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonStore_Tests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E70EB2672A56E4F800DE7726 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E78529092A570024002A86E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E78529102A570024002A86E2 /* libDorinikusSDK.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E70EB2602A56E4F800DE7726 = {
+			isa = PBXGroup;
+			children = (
+				E70EB2772A56E97900DE7726 /* PersonStore.swift */,
+				E785290E2A570024002A86E2 /* PersonStore_Tests.swift */,
+				E70EB2792A56E98600DE7726 /* Person.swift */,
+				E732D1952A57042C006E1133 /* Person_Tests.swift */,
+				E70EB27B2A56E99200DE7726 /* Animal.swift */,
+				E70EB26A2A56E4F800DE7726 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E70EB26A2A56E4F800DE7726 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E70EB2692A56E4F800DE7726 /* libDorinikusSDK.dylib */,
+				E785290C2A570024002A86E2 /* DorinikusSDKTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E70EB2652A56E4F800DE7726 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E70EB2682A56E4F800DE7726 /* DorinikusSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E70EB2722A56E4F800DE7726 /* Build configuration list for PBXNativeTarget "DorinikusSDK" */;
+			buildPhases = (
+				E70EB2652A56E4F800DE7726 /* Headers */,
+				E70EB2662A56E4F800DE7726 /* Sources */,
+				E70EB2672A56E4F800DE7726 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DorinikusSDK;
+			productName = DorinikusSDK;
+			productReference = E70EB2692A56E4F800DE7726 /* libDorinikusSDK.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		E785290B2A570024002A86E2 /* DorinikusSDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E78529152A570024002A86E2 /* Build configuration list for PBXNativeTarget "DorinikusSDKTests" */;
+			buildPhases = (
+				E78529082A570024002A86E2 /* Sources */,
+				E78529092A570024002A86E2 /* Frameworks */,
+				E785290A2A570024002A86E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E78529122A570024002A86E2 /* PBXTargetDependency */,
+			);
+			name = DorinikusSDKTests;
+			productName = DorinikusSDKTests;
+			productReference = E785290C2A570024002A86E2 /* DorinikusSDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E70EB2612A56E4F800DE7726 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					E70EB2682A56E4F800DE7726 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					E785290B2A570024002A86E2 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = E70EB2642A56E4F800DE7726 /* Build configuration list for PBXProject "DorinikusSDK" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E70EB2602A56E4F800DE7726;
+			productRefGroup = E70EB26A2A56E4F800DE7726 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E70EB2682A56E4F800DE7726 /* DorinikusSDK */,
+				E785290B2A570024002A86E2 /* DorinikusSDKTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E785290A2A570024002A86E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E70EB2662A56E4F800DE7726 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E70EB27A2A56E98600DE7726 /* Person.swift in Sources */,
+				E70EB2782A56E97900DE7726 /* PersonStore.swift in Sources */,
+				E70EB27C2A56E99200DE7726 /* Animal.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E78529082A570024002A86E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E732D1962A57042C006E1133 /* Person_Tests.swift in Sources */,
+				E78529172A57005B002A86E2 /* PersonStore_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E78529122A570024002A86E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E70EB2682A56E4F800DE7726 /* DorinikusSDK */;
+			targetProxy = E78529112A570024002A86E2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E70EB2702A56E4F800DE7726 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E70EB2712A56E4F800DE7726 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		E70EB2732A56E4F800DE7726 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E70EB2742A56E4F800DE7726 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		E78529132A570024002A86E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.royalapps.DorinikusSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E78529142A570024002A86E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.royalapps.DorinikusSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E70EB2642A56E4F800DE7726 /* Build configuration list for PBXProject "DorinikusSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E70EB2702A56E4F800DE7726 /* Debug */,
+				E70EB2712A56E4F800DE7726 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E70EB2722A56E4F800DE7726 /* Build configuration list for PBXNativeTarget "DorinikusSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E70EB2732A56E4F800DE7726 /* Debug */,
+				E70EB2742A56E4F800DE7726 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E78529152A570024002A86E2 /* Build configuration list for PBXNativeTarget "DorinikusSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E78529132A570024002A86E2 /* Debug */,
+				E78529142A570024002A86E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E70EB2612A56E4F800DE7726 /* Project object */;
+}
