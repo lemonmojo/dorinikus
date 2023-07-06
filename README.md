@@ -49,11 +49,13 @@ Just a Swift Playground Project
 * `file` utility
 * Modules
 * `otool` utility
-* App/Framework Bundles and resources
 * Extend on visibility/Access control beyond Module boundaries
 * Unit testing
-* AppKit
 * Deployment Target
+
+## Session 3 Agenda
+* App/Framework Bundles and resources
+* AppKit
 * Code Signing & Sandboxing (`codesign` utility)
 * Instruments and other debugging aids
 * ObjC & C interop
