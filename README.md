@@ -56,6 +56,7 @@ Just a Swift Playground Project
 ## Session 3 Agenda
 * App/Framework Bundles and resources
 * AppKit
+* SwiftUI
 * Code Signing & Sandboxing (`codesign` utility)
 * Instruments and other debugging aids
 * ObjC & C interop
